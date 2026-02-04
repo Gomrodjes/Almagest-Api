@@ -1,1 +1,49 @@
+# Manual del usuario - Proyecto AlmaGest (Entrega 4)
 
+Este documento detalla el funcionamiento de la API RestFul y las vistas de comprobacion de la gestion del almacen.
+
+## 1. Requisitos previos
+* Servidor MySQL activo (XAMPP).
+* Servidor de Laravel iniciado (`php artisan serve`).
+* Compilacion de assets activa (`npm run dev`).
+
+---
+
+## 2. Autentificacion
+Para acceder a ala gestion de pedidos, albaranes y facturas, es necesario estar autentificado.
+
+### 2.1 Registro de Usuario
+* **Endpoint:** `POST /api/register`
+* **Campos:** `firstname`, `secondname`, `email`, `password`, `password_confirmation`, `company_id`.
+* **Respuesta:** mensaje: `User registered successfully`, usuario y status 201.
+
+CAPTURA
+
+### 2.2 Login de usuario y obtencion del token
+* **Endpoint:** `POST /api/login`
+* **Campos:** `email`, `password`.
+* **Respuesta:** obtencion del `access_token`.
+
+CAPTURA
+
+---
+
+## 3. Guia de EndPoints (Postman)
+Todas estas acciones requieren el Bearer Token en la pestaña de Authorization.
+
+### 3.1 Pedidos
+
+### 3.2 Albaranes
+
+### 3.3 Facturas
+
+---
+
+## 4. Vistas de comprobacion (Navegador)
+Se han habilitado rutas web para visualizar los datos en tablas según los requisitos del proyecto:
+
+* **Pedidos:** Poner ruta del navegador - (Muestra: numero, fecha y empresa).
+* **Alabaranes:** Poner ruta del navegador - (Muestra: Nº Pedido, Nº Albarán y Fecha).
+* **Facturas:** Poner ruta del navegador - (Muestra: Nº Albarán, Nº Factura y Fecha).
+
+CAPTURAS
