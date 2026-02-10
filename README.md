@@ -42,8 +42,11 @@ Todas estas acciones requieren el Bearer Token en la pestaña de Authorization.
 ## 4. Vistas de comprobacion (Navegador)
 Se han habilitado rutas web para visualizar los datos en tablas según los requisitos del proyecto:
 
-* **Pedidos:** Poner ruta del navegador - (Muestra: numero, fecha y empresa).
-* **Alabaranes:** Poner ruta del navegador - (Muestra: Nº Pedido, Nº Albarán y Fecha).
-* **Facturas:** Poner ruta del navegador - (Muestra: Nº Albarán, Nº Factura y Fecha).
+* **Inicio de sesion:** /login - (Muestra: Nº Pedido, Nº Albarán y Fecha).
+* **Registro:** /register - (Muestra: Nº Albarán, Nº Factura y Fecha).
+
+* **Pedidos:** /orders-view - (Muestra: numero, fecha y empresa).
+* **Alabaranes:** /deliverynotes-view - (Muestra: Nº Pedido, Nº Albarán y Fecha).
+* **Facturas:** /invoices-view - (Muestra: Nº Albarán, Nº Factura y Fecha).
 
 CAPTURAS
