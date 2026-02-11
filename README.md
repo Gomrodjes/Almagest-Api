@@ -32,10 +32,31 @@ CAPTURA
 Todas estas acciones requieren el Bearer Token en la pestaña de Authorization.
 
 ### 3.1 Pedidos
+* **Endpoint (Ver):** `GET /api/orders/{id}`
+    * **Campos:** Ninguno (ID en la URL).
+    * **Respuesta:** JSON con los datos del pedido.
+* **Endpoint (Crear):** `POST /api/orders`
+    * **Campos:** `number`, `order_date`, `company_id`.
+    * **Respuesta:** JSON con el pedido creado y status 201.
 
 ### 3.2 Albaranes
+* **Endpoint (Eliminar):** `DELETE /api/deliverynotes/{id}`
+    * **Campos:** Ninguno (ID en la URL).
+    * **Respuesta:** Mensaje: `Albarán eliminado correctamente`.
+* **Endpoint (Firma y Borrado):** `POST /api/deliverynotes/sign/{id}`
+    * **Campos:** Ninguno (Se envía via POST para simular proceso de firma).
+    * **Respuesta:** Mensaje: `Albarán eliminado correctamente`.
 
 ### 3.3 Facturas
+* **Endpoint (Ver):** `GET /api/invoices/{id}`
+    * **Campos:** Ninguno (ID en la URL).
+    * **Respuesta:** JSON con los datos de la factura y su albarán.
+* **Endpoint (Actualizar):** `PUT /api/invoices/{id}`
+    * **Campos:** `num`, `issuedate`, `delivery_note_id`.
+    * **Respuesta:** Mensaje: `Invoice updated successfully` y objeto actualizado.
+* **Endpoint (Eliminar):** `DELETE /api/invoices/{id}`
+    * **Campos:** Ninguno (ID en la URL).
+    * **Respuesta:** Mensaje: `Invoice deleted successfully`.
 
 ---
 
