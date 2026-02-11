@@ -24,7 +24,8 @@ CAPTURA
 * **Campos:** `email`, `password`.
 * **Respuesta:** obtencion del `access_token`.
 
-CAPTURA
+<img width="1810" height="757" alt="image" src="https://github.com/user-attachments/assets/2b47d521-6a0d-4330-9534-7dec088a1a90" />
+
 
 ---
 
